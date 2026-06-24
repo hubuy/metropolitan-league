@@ -22,7 +22,7 @@ nav.links{display:flex;gap:4px;margin-left:auto;align-items:center}
 nav.links a{font-family:var(--mono);font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;color:#aeb6c9;padding:8px 11px;border-radius:30px}
 nav.links a:hover,nav.links a.active{color:var(--gold)}
 nav.links a.cta{background:var(--gold);color:var(--navy);font-weight:700}
-.menu-btn{display:none;margin-left:auto;background:none;border:1px solid rgba(255,255,255,.25);border-radius:8px;color:#cfd6e2;width:38px;height:34px;font-size:1.1rem;cursor:pointer}
+.menu-btn{display:none;margin-left:auto;background:none;border:1px solid rgba(255,255,255,.25);border-radius:8px;color:#cfd6e2;width:44px;height:44px;font-size:1.1rem;cursor:pointer}
 .pagehero{background:linear-gradient(150deg,#1C3056,#0B1426);color:var(--cream);padding:60px 0 52px;position:relative;overflow:hidden}
 .pagehero::before{content:"";position:absolute;inset:0;opacity:.06;background-image:linear-gradient(#fff 1px,transparent 1px),linear-gradient(90deg,#fff 1px,transparent 1px);background-size:48px 48px;mask-image:radial-gradient(circle at 86% 24%,#000,transparent 70%)}
 .pagehero .wrap{position:relative;z-index:2}
@@ -55,12 +55,19 @@ ul.clean li b{color:var(--navy)}
 .rt .k{font-family:var(--mono);font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);padding:14px 16px;background:var(--cream)}
 .rt .v{padding:14px 16px;color:#3c4760;font-size:.94rem}
 .callout{border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:12px;padding:16px 20px;background:#fff;margin-top:14px;font-size:.9rem;color:var(--mut)}
+.mob-toc{display:none;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px 20px;margin:24px 0 0}
+.mob-toc summary{font-family:var(--mono);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);cursor:pointer;list-style:none;padding:2px 0}
+.mob-toc summary::-webkit-details-marker{display:none}
+.mob-toc nav{display:flex;flex-direction:column;gap:2px;margin-top:12px}
+.mob-toc nav a{font-family:var(--mono);font-size:.68rem;letter-spacing:.06em;text-transform:uppercase;color:var(--mut);padding:10px 12px;border-left:2px solid var(--line);text-decoration:none;display:block}
+.mob-toc nav a:hover{color:var(--navy);border-left-color:var(--gold)}
 .foot{background:#070d1a;color:#8b93a8;padding:36px 0 46px;border-top:1px solid rgba(255,255,255,.08)}
 .foot .wrap{display:flex;flex-wrap:wrap;gap:18px;justify-content:space-between;align-items:center}
 .foot b{font-family:var(--disp);color:var(--cream);font-size:1.02rem}
 .foot .p{font-family:var(--mono);font-size:.6rem;letter-spacing:.06em;text-transform:uppercase;text-align:right}
 .foot a{color:var(--gold)}
-@media(max-width:880px){nav.links{display:none;position:absolute;top:62px;left:0;right:0;background:#0B1426;flex-direction:column;padding:10px;border-bottom:1px solid rgba(181,138,60,.2)}nav.links.open{display:flex}.menu-btn{display:block}.shell{grid-template-columns:1fr;gap:0}.toc{display:none}.divisions{grid-template-columns:1fr}.rt .row{grid-template-columns:120px 1fr}}
+@media(max-width:880px){nav.links{display:none;position:absolute;top:62px;left:0;right:0;background:var(--navy-deep);flex-direction:column;padding:10px;border-bottom:1px solid rgba(181,138,60,.2)}nav.links.open{display:flex}.menu-btn{display:block}nav.links a{padding:14px 16px}.mob-toc{display:block}.shell{grid-template-columns:1fr;gap:0}.toc{display:none}.divisions{grid-template-columns:1fr}.rt .row{grid-template-columns:120px 1fr}}
+@media(max-width:520px){.pagehero h1{font-size:clamp(1.8rem,7.5vw,2.2rem)}.rule h2{font-size:1.3rem}.shell{padding:32px 0}}
 </style>
 </head>
 <body>
@@ -83,7 +90,22 @@ ul.clean li b{color:var(--navy)}
   </div>
 </section>
 
-<div class="wrap"><div class="shell">
+<div class="wrap">
+<details class="mob-toc">
+  <summary>Jump to section</summary>
+  <nav>
+    <a href="#divisions">Divisions</a>
+    <a href="#season">Season &amp; structure</a>
+    <a href="#composition">Teams &amp; eligibility</a>
+    <a href="#scoring">Match &amp; scoring</a>
+    <a href="#lineups">Lineups</a>
+    <a href="#oncourt">On-court rules</a>
+    <a href="#subs">Subs &amp; injuries</a>
+    <a href="#equipment">Equipment</a>
+    <a href="#conduct">Conduct</a>
+  </nav>
+</details>
+<div class="shell">
   <aside class="toc">
     <div class="t">On this page</div>
     <a href="#divisions">Divisions</a>

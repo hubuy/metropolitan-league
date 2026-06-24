@@ -22,7 +22,7 @@ nav.links{display:flex;gap:4px;margin-left:auto;align-items:center}
 nav.links a{font-family:var(--mono);font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;color:#aeb6c9;padding:8px 11px;border-radius:30px}
 nav.links a:hover,nav.links a.active{color:var(--gold)}
 nav.links a.cta{background:var(--gold);color:var(--navy);font-weight:700}
-.menu-btn{display:none;margin-left:auto;background:none;border:1px solid rgba(255,255,255,.25);border-radius:8px;color:#cfd6e2;width:38px;height:34px;font-size:1.1rem;cursor:pointer}
+.menu-btn{display:none;margin-left:auto;background:none;border:1px solid rgba(255,255,255,.25);border-radius:8px;color:#cfd6e2;width:44px;height:44px;font-size:1.1rem;cursor:pointer}
 .pagehero{background:linear-gradient(150deg,#1C3056,#0B1426);color:var(--cream);padding:60px 0 52px;position:relative;overflow:hidden}
 .pagehero::before{content:"";position:absolute;inset:0;opacity:.06;background-image:linear-gradient(#fff 1px,transparent 1px),linear-gradient(90deg,#fff 1px,transparent 1px);background-size:48px 48px;mask-image:radial-gradient(circle at 86% 24%,#000,transparent 70%)}
 .pagehero .wrap{position:relative;z-index:2}
@@ -66,7 +66,8 @@ nav.links a.cta{background:var(--gold);color:var(--navy);font-weight:700}
 .foot b{font-family:var(--disp);color:var(--cream);font-size:1.02rem}
 .foot .p{font-family:var(--mono);font-size:.6rem;letter-spacing:.06em;text-transform:uppercase;text-align:right}
 .foot a{color:var(--gold)}
-@media(max-width:880px){nav.links{display:none;position:absolute;top:62px;left:0;right:0;background:#0B1426;flex-direction:column;padding:10px;border-bottom:1px solid rgba(181,138,60,.2)}nav.links.open{display:flex}.menu-btn{display:block}.grid3,.grid2,.clublist{grid-template-columns:1fr}}
+@media(max-width:880px){nav.links{display:none;position:absolute;top:62px;left:0;right:0;background:var(--navy-deep);flex-direction:column;padding:10px;border-bottom:1px solid rgba(181,138,60,.2)}nav.links.open{display:flex}.menu-btn{display:block}nav.links a{padding:14px 16px}.grid3,.grid2,.clublist{grid-template-columns:1fr}}
+@media(max-width:520px){.pagehero h1{font-size:clamp(1.8rem,7.5vw,2.2rem)}.card .nn{font-size:1.8rem}.sec{padding:40px 0}}
 </style>
 </head>
 <body>

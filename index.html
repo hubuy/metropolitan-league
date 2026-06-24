@@ -255,7 +255,20 @@ a.ex .ba{color:var(--gold-soft)}
   <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E0BC6E"/><stop offset="1" stop-color="#9A7430"/></linearGradient>
   <symbol id="d-mark" viewBox="0 0 140 140"><line x1="38" y1="104" x2="102" y2="104" stroke="currentColor" stroke-width="2" opacity=".55"/><path d="M40 100 Q64 34 102 64" fill="none" stroke="currentColor" stroke-width="5.5" stroke-linecap="round"/><circle cx="40" cy="100" r="4.5" fill="currentColor"/><circle cx="102" cy="64" r="10" fill="currentColor"/></symbol>
   <symbol id="d-emblem" viewBox="0 0 140 140"><circle cx="70" cy="70" r="66" fill="none" stroke="currentColor" stroke-width="2.5"/><circle cx="70" cy="70" r="58" fill="none" stroke="currentColor" stroke-width="1"/><line x1="46" y1="102" x2="94" y2="102" stroke="currentColor" stroke-width="1.6" opacity=".6"/><path d="M48 98 Q70 46 94 68" fill="none" stroke="currentColor" stroke-width="4.6" stroke-linecap="round"/><circle cx="48" cy="98" r="4" fill="currentColor"/><circle cx="94" cy="68" r="8.5" fill="currentColor"/></symbol>
-  <symbol id="allblacks" viewBox="0 0 140 120"><g transform="rotate(-24 70 60)"><rect x="40" y="10" width="34" height="46" rx="12" fill="#111"/><rect x="52" y="54" width="10" height="32" rx="3" fill="#111"/><text x="57" y="40" text-anchor="middle" font-family="Archivo, sans-serif" font-weight="900" font-size="26" fill="#fff">H</text></g><g transform="rotate(24 70 60)"><rect x="66" y="10" width="34" height="46" rx="12" fill="#fff" stroke="#111" stroke-width="3"/><rect x="78" y="54" width="10" height="32" rx="3" fill="#fff" stroke="#111" stroke-width="3"/><text x="83" y="40" text-anchor="middle" font-family="Archivo, sans-serif" font-weight="900" font-size="26" fill="#111">K</text></g></symbol>
+  <symbol id="allblacks" viewBox="0 0 140 120">
+    <!-- H paddle — black, behind -->
+    <g transform="rotate(-24 70 60)">
+      <rect x="50.5" y="50" width="13" height="36" rx="4" fill="#111"/>
+      <ellipse cx="57" cy="29" rx="19" ry="24" fill="#111"/>
+      <text x="57" y="39" text-anchor="middle" font-family="Space Grotesk, sans-serif" font-weight="700" font-size="28" fill="#fff">H</text>
+    </g>
+    <!-- K paddle — white with border, in front -->
+    <g transform="rotate(24 70 60)">
+      <rect x="76.5" y="50" width="13" height="36" rx="4" fill="#fff" stroke="#111" stroke-width="3"/>
+      <ellipse cx="83" cy="29" rx="19" ry="24" fill="#fff" stroke="#111" stroke-width="3"/>
+      <text x="83" y="39" text-anchor="middle" font-family="Space Grotesk, sans-serif" font-weight="700" font-size="28" fill="#111">K</text>
+    </g>
+  </symbol>
 </defs></svg>
 
 <header class="bar">

@@ -193,13 +193,13 @@ nav.links a.cta{background:var(--lime);color:var(--navy);font-weight:700}
 .hero h1::after{margin-top:20px}
 .comm .h2::after{background:var(--navy)} .light .h2::after{background:var(--gold)}
 /* gallery */
-.gallery{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:155px;gap:12px;margin-top:24px}
-.gallery figure{margin:0;border-radius:14px;overflow:hidden;border:1px solid rgba(181,138,60,.14)}
-.gallery img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s}
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:200px;gap:12px;margin-top:24px}
+.gallery figure{margin:0;border-radius:14px;overflow:hidden;border:1px solid rgba(181,138,60,.14);background:#0B1426}
+.gallery img{width:100%;height:100%;object-fit:contain;display:block;transition:transform .4s}
 .gallery figure:hover img{transform:scale(1.05)}
 .gallery .g-tall{grid-column:span 2;grid-row:span 2}
 .gallery .g-wide{grid-column:span 2}
-@media(max-width:760px){.gallery{grid-template-columns:1fr 1fr;grid-auto-rows:130px}.gallery .g-tall,.gallery .g-wide{grid-column:span 2}}
+@media(max-width:760px){.gallery{grid-template-columns:1fr 1fr;grid-auto-rows:170px}.gallery .g-tall,.gallery .g-wide{grid-column:span 2}}
 /* logo band */
 .logoband{background:var(--navy);border-top:3px solid var(--lime);border-bottom:3px solid var(--lime)}
 .logoband .wrap{display:flex;align-items:center;gap:28px;justify-content:center;padding:38px 24px;flex-wrap:wrap;text-align:center}
@@ -320,14 +320,13 @@ a.ex .ba{color:var(--gold-soft)}
 <!-- MATCH scoreboard -->
 <section class="section" id="match" style="background:linear-gradient(180deg,#0B1426,#0e1a30)"><div class="wrap">
   <span class="eyb">The Story So Far</span>
-  <h2 class="h2">Not a pitch. A proof point.</h2>
-  <p style="color:#c2cadb;max-width:60ch">June 5, 2026 — the inaugural Metropolitan League match. Hell's Kitchen took on Red Hook, The Botanist signed on as a launch sponsor, and the night delivered.</p>
+  <p style="color:#c2cadb;max-width:60ch">June 5, 2026 — the inaugural Metropolitan League match. Hell's Kitchen took on Red Hook, and the night delivered.</p>
   <div class="board" data-animate="fade-up">
     <div class="bhead"><span>★ Inaugural Match · June 5, 2026</span><span>Hell's Kitchen Pickleball Club</span></div>
     <div class="grid">
-      <div class="tm"><div class="chip" style="background:#fff"><svg viewBox="0 0 140 130" style="width:78px"><use href="#allblacks"/></svg></div><div class="nm">HKPC All Blacks</div><div class="res win">W</div><div class="tag w">Winner · Hell's Kitchen</div></div>
+      <div class="tm"><div class="chip" style="background:#0A0A0A"><img src="images/All_Blacks-Logo.png" alt="HKPC All Blacks" loading="lazy" style="max-width:80%;display:block;filter:invert(1)"></div><div class="nm">HKPC All Blacks</div><div class="res win">W</div><div class="tag w">Winner · Hell's Kitchen</div></div>
       <div class="vs">VS</div>
-      <div class="tm"><div class="chip" style="background:var(--bk)"><svg viewBox="0 0 140 140" style="width:62px"><use href="#d-mark" style="color:#fff"/></svg></div><div class="nm">RHPC Hookers</div><div class="res lose">L</div><div class="tag">Red Hook</div></div>
+      <div class="tm"><div class="chip" style="background:#000000"><img src="images/rhpc-logo.png" alt="RHPC Hookers" loading="lazy" style="max-width:90%;display:block"></div><div class="nm">RHPC Hookers</div><div class="res lose">L</div><div class="tag">Red Hook</div></div>
     </div>
     <div class="bstats">
       <div><b>1st</b><span>Inaugural</span></div>
@@ -342,25 +341,26 @@ a.ex .ba{color:var(--gold-soft)}
 <section class="section" id="standings" style="background:#0B1426"><div class="wrap">
   <span class="eyb">Season 2026</span>
   <h2 class="h2">Standings &amp; schedule</h2>
-  <p style="color:#c2cadb;max-width:60ch">The race is just getting started. Founding clubs are on the board — the full season tips off this summer.</p>
+  <p style="color:#c2cadb;max-width:60ch">Founding clubs are on board. Friendly exhibition matches are happening this summer. The League kicks off Fall 2026.</p>
   <div class="standwrap">
     <div>
       <div class="eyb" style="margin-bottom:10px">The Table</div>
-      <div style="overflow-x:auto"><table class="standtable"><thead><tr><th>Club</th><th>Borough</th><th>P</th><th>W</th><th>L</th><th>Pts</th></tr></thead>
+      <div style="overflow-x:auto"><table class="standtable"><thead><tr><th>Club</th><th>Borough</th><th>GP</th><th>W</th><th>L</th></tr></thead>
       <tbody>
-        <tr><td class="tname">HKPC All Blacks</td><td>Hell's Kitchen</td><td>1</td><td>1</td><td>0</td><td class="pts">3</td></tr>
-        <tr><td class="tname">Gotham PC</td><td>NYC</td><td>0</td><td>0</td><td>0</td><td class="pts">0</td></tr>
-        <tr><td class="tname">RHPC Hookers</td><td>Red Hook</td><td>1</td><td>0</td><td>1</td><td class="pts">0</td></tr>
+        <tr><td class="tname">HKPC All Blacks</td><td>Manhattan</td><td>1</td><td>1</td><td>0</td></tr>
+        <tr><td class="tname">Conquer</td><td>Manhattan</td><td>0</td><td>0</td><td>0</td></tr>
+        <tr><td class="tname">RHPC Hookers</td><td>Brooklyn</td><td>1</td><td>0</td><td>1</td></tr>
+        <tr><td class="tname">Gotham PC</td><td>Queens</td><td>0</td><td>0</td><td>0</td></tr>
       </tbody></table></div>
     </div>
     <div>
-      <div class="eyb" style="margin-bottom:10px">Fixtures</div>
+      <div class="eyb" style="margin-bottom:10px">Exhibition Match Schedule</div>
       <div class="fixtures">
-        <div class="fx"><span class="st final">Final</span><span class="fxt"><b>All Blacks</b> def. Hookers &middot; Jun 5 &middot; Hell's Kitchen</span></div>
-        <div class="fx"><span class="st tba">Summer</span><span class="fxt">Friendlies &middot; division vs division &middot; <b>TBA</b></span></div>
-        <div class="fx"><span class="st tba">August</span><span class="fxt">Season Launch &middot; three founding clubs &middot; <b>TBA</b></span></div>
+        <div class="fx"><span class="st final">Final</span><span class="fxt"><b>All Blacks</b> (7) def. Hookers &middot; Jun 5 &middot; HKPC</span></div>
+        <div class="fx"><span class="st tba">Aug 7</span><span class="fxt"><b>Gotham PC</b> at RHPC Hookers &middot; RHPC</span></div>
+        <div class="fx"><span class="st tba">Aug 14</span><span class="fxt"><b>Gotham PC</b> at HKPC All Blacks &middot; HKPC</span></div>
       </div>
-      <p style="font-family:var(--mono);font-size:.6rem;color:#6f7894;margin-top:12px;letter-spacing:.06em">FIXTURES UPDATED EACH MATCHWEEK</p>
+      <p style="font-family:var(--mono);font-size:.6rem;color:#6f7894;margin-top:12px;letter-spacing:.06em">SCHEDULE UPDATED AS MATCHES ARE CONFIRMED</p>
     </div>
   </div>
 </div></section>
@@ -377,25 +377,51 @@ a.ex .ba{color:var(--gold-soft)}
 <section class="section" id="teams"><div class="wrap">
   <span class="eyb">The Clubs</span>
   <h2 class="h2">Founding clubs</h2>
-  <p style="color:#c2cadb;max-width:62ch">Independent NYC pickleball clubs, one league. Three founding clubs are in &mdash; and the field is growing.</p>
-  <div class="cards c3">
+  <p style="color:#c2cadb;max-width:62ch">Independent NYC pickleball clubs, one league. Four founding clubs are in &mdash; and the field is growing.</p>
+  <div class="teamgrid">
     <article class="team" data-animate="fade-up">
-      <div class="stripe" style="background:#111"></div>
-      <div class="top"><div class="badge" style="background:#fff"><svg viewBox="0 0 140 130" style="width:72px"><use href="#allblacks"/></svg></div>
-        <div><div class="dist">Hell's Kitchen &middot; Manhattan</div><h3>HKPC All Blacks</h3><div class="sub">EST. 2026 &middot; INAUGURAL CHAMPIONS</div></div></div>
+      <div style="background:#0A0A0A;padding:24px;display:flex;align-items:center;justify-content:center;min-height:160px">
+        <img src="images/All_Blacks-Logo.png" alt="HKPC All Blacks" loading="lazy" style="max-width:80%;display:block;filter:invert(1)">
+      </div>
+      <div style="padding:18px 24px 8px">
+        <div class="dist">Hell's Kitchen &middot; Manhattan</div>
+        <h3>HKPC All Blacks</h3>
+        <div class="sub">EST. 2026 &middot; INAUGURAL CHAMPIONS</div>
+      </div>
       <div class="body">"Amateur on paper, pro everywhere else." Hell's Kitchen's flagship club &mdash; and winners of the league's first-ever match.</div>
     </article>
     <article class="team" data-animate="fade-up" data-delay="60">
-      <div class="stripe" style="background:var(--bk)"></div>
-      <div class="top"><div class="badge" style="background:var(--bk)"><svg viewBox="0 0 140 140" style="width:56px"><use href="#d-mark" style="color:#fff"/></svg></div>
-        <div><div class="dist">Red Hook &middot; Brooklyn</div><h3>RHPC Hookers</h3><div class="sub">EST. 2026 &middot; FOUNDING CLUB</div></div></div>
+      <div style="background:#000000;padding:24px;display:flex;align-items:center;justify-content:center;min-height:160px">
+        <img src="images/rhpc-logo.png" alt="RHPC Hookers" loading="lazy" style="max-width:80%;display:block">
+      </div>
+      <div style="padding:18px 24px 8px">
+        <div class="dist">Red Hook &middot; Brooklyn</div>
+        <h3>RHPC Hookers</h3>
+        <div class="sub">EST. 2026 &middot; FOUNDING CLUB</div>
+      </div>
       <div class="body">Brooklyn's Red Hook Pickleball Club &mdash; the All Blacks' first rivals and a founding member. Hungry for the rematch.</div>
     </article>
     <article class="team" data-animate="fade-up" data-delay="120">
-      <div class="stripe" style="background:var(--qn)"></div>
-      <div class="top"><div class="badge" style="background:var(--qn)"><svg viewBox="0 0 140 140" style="width:56px"><use href="#d-mark" style="color:#fff"/></svg></div>
-        <div><div class="dist">New York City</div><h3>Gotham PC</h3><div class="sub">EST. 2026 &middot; FOUNDING CLUB</div></div></div>
+      <div style="background:#000000;padding:24px;display:flex;align-items:center;justify-content:center;min-height:160px">
+        <img src="images/gotham-logo.png" alt="Gotham PC" loading="lazy" style="max-width:80%;display:block">
+      </div>
+      <div style="padding:18px 24px 8px">
+        <div class="dist">New York City</div>
+        <h3>Gotham PC</h3>
+        <div class="sub">EST. 2026 &middot; FOUNDING CLUB</div>
+      </div>
       <div class="body">One of New York's premier independent clubs and a founding member of the Metropolitan League.</div>
+    </article>
+    <article class="team" data-animate="fade-up" data-delay="180">
+      <div style="background:#C2532A;padding:24px;display:flex;align-items:center;justify-content:center;min-height:160px">
+        <img src="images/conquer-logo.jpg" alt="Conquer" loading="lazy" style="max-width:80%;max-height:90px;display:block">
+      </div>
+      <div style="padding:18px 24px 8px">
+        <div class="dist">New York City</div>
+        <h3>Conquer</h3>
+        <div class="sub">EST. 2026 &middot; FOUNDING CLUB</div>
+      </div>
+      <div class="body"></div>
     </article>
   </div>
   <div class="eyb" style="margin-top:38px">Joining</div>
@@ -413,31 +439,9 @@ a.ex .ba{color:var(--gold-soft)}
 <!-- FORMAT -->
 <section class="section light" id="format"><div class="wrap">
   <span class="eyb">How It Works</span>
-  <h2 class="h2">Three divisions. One night.</h2>
-  <p class="lede">Club-vs-club battles across skill tiers &mdash; everyone gets a game, every result counts toward the table.</p>
-  <div class="fmtgrid">
-    <div class="courtcard" data-animate="fade-up">
-      <svg viewBox="0 0 220 360" style="width:100%;max-width:240px">
-        <rect x="2" y="2" width="216" height="356" rx="6" fill="#15233F"/>
-        <rect x="14" y="14" width="192" height="332" fill="none" stroke="#F4F1E8" stroke-width="2.5"/>
-        <rect x="14" y="132" width="192" height="48" fill="#B58A3C" opacity=".22"/>
-        <rect x="14" y="180" width="192" height="48" fill="#B58A3C" opacity=".22"/>
-        <line x1="14" y1="132" x2="206" y2="132" stroke="#F4F1E8" stroke-width="1.5"/>
-        <line x1="14" y1="228" x2="206" y2="228" stroke="#F4F1E8" stroke-width="1.5"/>
-        <line x1="110" y1="14" x2="110" y2="132" stroke="#F4F1E8" stroke-width="1.5"/>
-        <line x1="110" y1="228" x2="110" y2="346" stroke="#F4F1E8" stroke-width="1.5"/>
-        <line x1="6" y1="180" x2="214" y2="180" stroke="#B58A3C" stroke-width="4"/>
-        <use href="#d-mark" x="78" y="148" width="64" height="64" style="color:#D8B262"/>
-        <text x="110" y="120" text-anchor="middle" font-family="Space Mono, monospace" font-size="9" letter-spacing="2" fill="#D8B262">THE KITCHEN</text>
-      </svg>
-    </div>
-    <div class="fmtlist" data-animate="fade-up" data-delay="80">
-      <div class="fb"><div class="fn" style="font-size:1.5rem">JV</div><div><h4>Junior Varsity</h4><p>2.75&ndash;3.75 DUPR &mdash; where most of the league plays.</p></div></div>
-      <div class="fb"><div class="fn" style="font-size:1.4rem">VAR</div><div><h4>Varsity</h4><p>3.75&ndash;4.75 DUPR &mdash; sharper, faster, the heart of the rivalry.</p></div></div>
-      <div class="fb"><div class="fn" style="font-size:1.4rem">PRO</div><div><h4>Pro</h4><p>4.75+ DUPR &mdash; the top-flight, watchable product.</p></div></div>
-      <div class="fb"><div class="fn">&#9733;</div><div><h4>The format</h4><p>Triples (one woman + two men) &middot; ~6-week season, Friday nights &middot; games to 11 &middot; run by Dink Dynamics.</p></div></div>
-    </div>
-  </div>
+  <h2 class="h2">Competition Structure</h2>
+  <p style="margin-top:10px">Powered by <a href="https://www.dinkdynamics.com" target="_blank" rel="noopener" style="color:var(--gold);font-weight:600">Dink Dynamics</a></p>
+  <p style="font-family:var(--mono);font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);margin-top:10px">Coming soon</p>
 </div></section>
 
 
@@ -484,9 +488,9 @@ a.ex .ba{color:var(--gold-soft)}
   <h2 class="h2">Sponsor the league</h2>
   <p style="color:#c2cadb;max-width:62ch">Get in on the ground floor. Founding partners earn right of first refusal as we scale to the Tri-State League — and the seats are capped.</p>
   <div class="tiers">
-    <div class="tier hot" data-animate="fade-up"><div class="tn">Title · 1 of 1</div><div class="pr" style="color:var(--lime)">$25K</div><div class="per">/ season</div><div class="seats">Presenting</div><ul><li>Presenting sponsor billing</li><li>Jersey front · largest</li><li>Scoreboard + court banners</li><li>Co-developed cocktail</li><li>ROFR · Tri-State League</li></ul><a class="pick" href="#contact">Enquire</a></div>
-    <div class="tier" data-animate="fade-up" data-delay="50"><div class="tn">Founding · up to 3</div><div class="pr">$10K</div><div class="per">/ season</div><div class="seats">Founding Partner</div><ul><li>Founding designation</li><li>Jersey sleeve placement</li><li>Banner + team room</li><li>Featured activation</li><li>ROFR · League Yr 1–3</li></ul><a class="pick" href="#contact">Enquire</a></div>
-    <div class="tier" data-animate="fade-up" data-delay="100"><div class="tn">Court · up to 5</div><div class="pr">$5K</div><div class="per">/ season</div><div class="seats">Court Partner</div><ul><li>Court-side banner</li><li>Drink ticket or snack</li><li>Email + flyer logo</li><li>Analytics report</li></ul><a class="pick" href="#contact">Enquire</a></div>
+    <div class="tier hot" data-animate="fade-up"><div class="tn">Title · 1 of 1</div><div class="pr" style="color:var(--lime)">$50K</div><div class="per">/ season</div><div class="seats">Presenting</div><ul><li>Presenting sponsor billing</li><li>Jersey front · largest</li><li>Scoreboard + court banners</li><li>All Social Media</li><li>ROFR on All Expansion Opportunities</li></ul><a class="pick" href="#contact">Enquire</a></div>
+    <div class="tier" data-animate="fade-up" data-delay="50"><div class="tn">Founding · up to 3</div><div class="pr">$20K</div><div class="per">/ season</div><div class="seats">Founding Partner</div><ul><li>Founding designation</li><li>Jersey sleeve placement</li><li>Signage and Social Media Package</li><li>Featured activation</li><li>ROFR · League Yr 1–3</li></ul><a class="pick" href="#contact">Enquire</a></div>
+    <div class="tier" data-animate="fade-up" data-delay="100"><div class="tn">Court · up to 5</div><div class="pr">$10K</div><div class="per">/ season</div><div class="seats">Court Partner</div><ul><li>Court-side banner</li><li>Email + flyer logo</li><li>Social Media Package</li><li>Signage Package</li></ul><a class="pick" href="#contact">Enquire</a></div>
     <div class="tier" data-animate="fade-up" data-delay="150"><div class="tn">Supporter · open</div><div class="pr">$2K</div><div class="per">/ season</div><div class="seats">Supporter</div><ul><li>Email + flyer logo</li><li>Match recap mention</li><li>Founding designation</li></ul><a class="pick" href="#contact">Enquire</a></div>
   </div>
   <p class="spnote">Founding seats are capped — 1 Title · 3 Founding. Once they're gone, they're gone.</p>

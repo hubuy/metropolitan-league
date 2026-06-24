@@ -182,8 +182,10 @@ nav.links a.cta{background:var(--lime);color:var(--navy);font-weight:700}
 @media (max-width:520px){
   .bento,.bstats,.tiers{grid-template-columns:1fr}
   .bento{overflow:hidden}
-  .bt{overflow:hidden}
-  .bt .nn{font-size:2.6rem;line-height:1.1}
+  .bt{width:100%;position:relative;overflow:hidden;grid-column:auto;grid-row:auto}
+  .bt.big,.bt.wide{grid-column:auto;grid-row:auto}
+  .bt.big{display:block}
+  .bt .nn{font-size:2.6rem;line-height:1.1;max-width:100%}
   .bt.big .emb{width:80px;height:80px}
   .expand{grid-template-columns:repeat(2,1fr)}
   .hero h1{font-size:clamp(2.4rem,8vw,3.2rem)}
